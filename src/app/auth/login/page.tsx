@@ -1,8 +1,10 @@
 "use client"
 import { useRef } from "react"
+import { useRouter } from "next/navigation"
 
 function page() {
 
+  const router = useRouter()
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
 
@@ -55,7 +57,7 @@ function page() {
         <input className="text-white" type="submit" value="Iniciar sesion" />
       </form>
 
-      <button>Click</button>
+      <button onClick={() => router.push("/")}>Volver al inicio</button>
     </>
   )
 }

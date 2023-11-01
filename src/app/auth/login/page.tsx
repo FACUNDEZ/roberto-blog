@@ -23,6 +23,7 @@ function page() {
 
       if (response.status === 201) {
         alert("Inicio de sesión exitoso");
+        window.location.href = "/AllBlogs"
       } else if (response.status === 400) {
         alert(data.error);
       } else if (response.status === 403) {

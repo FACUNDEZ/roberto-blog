@@ -32,7 +32,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
     return (
         <>
-        <Link href="/">Volver</Link>
+        <Link href="/AllBlogs">Volver</Link>
             <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate !prose-invert mx-auto">
                 <h1>{blog.metadatos.title}</h1>
                 <MDXRemote source={blog.content}></MDXRemote >
